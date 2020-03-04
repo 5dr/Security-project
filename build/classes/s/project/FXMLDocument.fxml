@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="s.project.FXMLDocumentController">
+   <children>
+      <Pane fx:id="p1" prefHeight="700.0" prefWidth="893.0">
+         <children>
+            <ImageView fitHeight="760.0" fitWidth="1240.0" pickOnBounds="true" preserveRatio="true" x="-50.0">
+               <image>
+                  <Image url="@encryption-1.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="700.0" prefWidth="893.0" style="-fx-background-color: #000000; -fx-opacity: .8;" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="t1" focusColor="RED" labelFloat="true" layoutX="320.0" layoutY="580.0" prefHeight="60.0" prefWidth="244.0" promptText="Cipher text" style="-fx-background-color: #ffffff; -fx-opacity: .8;" unFocusColor="RED" visible="false">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="sub" layoutX="77.0" layoutY="232.0" style="-fx-background-color: #000000;" text="Sub Keys" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab1" layoutX="72.0" layoutY="295.0" prefHeight="20.0" prefWidth="165.0" style="-fx-background-color: #000000;" text="Encrypt" textFill="#81e3ff" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="20.0" style="-fx-background-color: #000000;" text="Encryption" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="291.0" layoutY="220.0" onAction="#ok" prefHeight="39.0" prefWidth="280.0" style="-fx-background-color: #00394d; -fx-background-radius: 10; -fx-opacity: .9;" text="ok" textFill="#81e3ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="tog" layoutX="430.0" layoutY="100.0" onAction="#to" prefHeight="58.0" prefWidth="65.0" text=" " toggleColor="#01579b" toggleLineColor="#0288d1" unToggleColor="#006064" unToggleLineColor="#0097a7" />
+      <Label fx:id="lab" layoutX="331.0" layoutY="110.0" prefWidth="73.0" style="-fx-background-color: #000000; -fx-opacity: .8;" text="Encrypt" textFill="#81e3ff">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="110.0" style="-fx-background-color: #000000; -fx-opacity: .8;" text="Decrypt" textFill="#81e3ff">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="170.0" style="-fx-background-color: #000000;" text="Key :" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="key" layoutX="120.0" layoutY="177.0" prefHeight="30.0" prefWidth="235.0" />
+      <Label fx:id="p_or_c" layoutX="400.0" layoutY="170.0" style="-fx-background-color: #000000;" text="Plain text :" textFill="RED">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text" layoutX="550.0" layoutY="177.0" prefHeight="30.0" prefWidth="235.0" />
+      <Label fx:id="lab11" layoutX="623.0" layoutY="305.0" prefHeight="20.0" prefWidth="165.0" style="-fx-background-color: #000000;" text="Encrypt" textFill="#81e3ff" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sub1" layoutX="635.0" layoutY="242.0" style="-fx-background-color: #000000;" text="Encryption" textFill="RED" visible="false">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
